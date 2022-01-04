@@ -1,0 +1,29 @@
+GET http://localhost:4000/api/employee/getemployees
+
+###
+
+POST http://localhost:4000/api/employee/addemployee
+Content-Type: application/json
+
+{
+    "firstName" : "Tony",
+    "lastName" : "Mars",
+    "birthDate" : "2012-12-12",
+    "email" : "tony.m@gmail.com",
+    "position" : "Staff",
+    "salary" : 30000
+}
+
+###
+DELETE http://localhost:4000/api/employee/deleteemployee/61d03a64f84229eeb1c91c23
+
+### 
+GET http://localhost:4000/api/employee/getemployee/61d03d16d96ee52f87ec487c
+
+### 
+PUT http://localhost:4000/api/employee/updateemployee/61d03d16d96ee52f87ec487c
+Content-Type: application/json
+
+{
+    "salary" : 35000
+}
